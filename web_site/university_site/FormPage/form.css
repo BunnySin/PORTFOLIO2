@@ -1,0 +1,752 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+
+/* ========================================
+    レイアウト用
+========================================= */
+
+body {
+    width: 1440px;
+	height: auto;
+	font-family: "游ゴシック";
+}
+
+
+/* ========================================
+    ヘッダー用
+========================================= */
+
+header {
+    width: 1440px;
+    height: 60px;
+    background-color: #1e2f46;
+}
+
+
+/* ========================================
+    レイアウト用
+========================================= */
+div#wrapper {
+    height: 1624px;
+    margin: 0 auto;
+}
+
+#form h1 {
+    width: 800px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #010101;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    border-bottom: 3px solid #a6a6a6;
+}
+
+
+
+/* ========================================
+    ボックス１用
+========================================= */
+
+.box1 {
+    width: 800px;
+    height: 177px;
+    border: 1px solid #a6a6a6;
+    margin-top: 15px;
+    border-left: 7px solid #0190d2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box1 p.elerd {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5a44;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.box1 p.elerd_text {
+    font-size: 18;
+    font-weight: normal;
+    color: #1d1d1d;
+    padding-left: 20px;
+    line-height: 1.5;
+
+}
+
+.box1 p.elerd_text span {
+    font-weight: bold;
+}
+
+/* ========================================
+    M ボックス用
+========================================= */
+
+.m-box {
+    width: 432px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.m-box p.mbox1 {
+    width: 80px;
+    height: 25px;
+    border: 1px solid #a6a6a6;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #95b6e1;
+    text-align: center;
+    padding: 8px 16px;
+    margin-top: 35px;
+    float: left;
+       
+
+}
+
+
+.mbox_icon {
+    display: block;
+    float: left;
+    margin: 45px 15px 0 20px;
+}
+
+
+
+
+.m-box p.mbox2 {
+    width: 80px;
+    height: 25px;
+    border: 1px solid #a6a6a6;
+    font-size: 18px;
+    font-weight: bold;
+    color: #cdcdcd;
+    text-align: center;
+    padding: 8px 16px;
+    margin-top: 35px;
+    float: left;
+    margin-right: 45px;
+}
+
+.m-box p.mbox3 {
+    width: 80px;
+    height: 25px;
+    border: 1px solid #a6a6a6;
+    font-size: 18px;
+    font-weight: bold;
+    color: #cdcdcd;
+    text-align: center;
+    padding: 8px 16px;
+    margin-top: 35px;
+    float: left;
+}
+
+/* ========================================
+    ボックス2 用
+========================================= */
+
+
+.box2 {
+    width: 800px;
+    height: 225px;
+    border: 1px solid #a6a6a6;
+    border-left: 7px solid #0190d2;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box2 h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 10px;
+}
+
+span.row-elerd {
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff5a44;
+    padding: 5px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+div.box2 .m-box2 {
+    width: 799px;
+    height: 188px;
+    background-color: #eeeeee;
+    border: 1px solid #a6a6a6;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 11px;
+}
+
+div.m-box2 h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #ff5a44;
+    padding-bottom: 15px;
+}
+
+div.m-box2 ul li {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+
+
+
+/* ========================================
+    ボックス3 用
+========================================= */
+
+div.box3 {
+    width: 800px;
+    height: 850px;
+    border: 1px solid #a6a6a6;
+    border-left: 7px solid #0190d2;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #eeeeee;
+}
+
+
+
+
+
+div.box3-row1 {
+    width: 800px;
+    height: 66px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+div.col-head-1 {
+    float: left;
+    background-color: #fff;
+    width: 178px;
+    height: 56px;
+    border-right: 1px solid #a6a6a6;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+div.col-right-1 {
+    width: 612px;
+    height: 67px;
+    margin-left: 188px;
+    position: relative;
+}
+
+div.col-right-1 input {
+    position: absolute;
+    display: inline-block;
+    padding: 5px 3px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+div.box3-row2 {
+    width: 800px;
+    height: 66px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+div.col-head-2 {
+    float: left;
+    background-color: #fff;
+    width: 178px;
+    height: 56px;
+    border-right: 1px solid #a6a6a6;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+div.col-right-2 {
+    width: 612px;
+    height: 67px;
+    margin-left: 188px;
+    position: relative;
+ }
+
+
+div.col-right-2 input {
+    position: absolute;
+    display: inline-block;
+    padding: 5px 3px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+div.box3-row3 {
+    width: 800px;
+    height: 321px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+
+
+div.col-head-3 {
+    float: left;
+    background-color: #fff;
+    width: 178px;
+    height: 311px;
+    border-right: 1px solid #a6a6a6;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+div.col-right-3 {
+   width: 612px;
+   height: 321px;
+   margin-left: 188px;
+   position: relative;
+}
+
+
+div.col-right-3 p.zip {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    padding: 20px;
+}
+
+div.col-right-3 p.zip input {
+    margin-left: 10px;
+    padding: 5px 3px;
+    position: absolute;
+}
+
+
+
+div.col-right-3 p.adm {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    float: left;
+    padding-left: 20px;
+}
+
+div.col-right-3 select {
+    margin-left: 10px;
+    margin-top: 1px;
+    padding: 5px 3px;
+}
+
+
+div.col-right-3 p.address1 input {
+    padding: 5px 100px 5px 0;
+    margin: 40px 0 10px 20px;
+}
+
+
+div.col-right-3 p.address2 input {
+    padding: 5px 100px 5px 0;
+    margin: 10px 0 10px 20px;
+}
+
+
+div.col-right-3 p.address3
+input {
+    padding: 5px 100px 5px 0;
+    margin: 10px 0 10px 20px;
+}
+
+
+
+
+
+
+
+div.box3-row4 {
+    width: 800px;
+    height: 48px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+
+div.col-head-4 {
+    float: left;
+    background-color: #fff;
+    width: 178px;
+    height: 38px;
+    border-right: 1px solid #a6a6a6;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+div.col-right-4 {
+    width: 612px;
+    height: 48px;
+    margin-left: 188px;
+    position: relative;
+}
+
+div.col-right-4 input {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px 3px;
+    position: absolute;
+    clear: both;
+}
+
+
+
+
+
+div.box3-row5 {
+    width: 800px;
+    height: 85px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+
+div.col-head-5 {
+    float: left;
+    background-color: #fff;
+    width: 178px;
+    height: 75px;
+    border-right: 1px solid #a6a6a6;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+div.col-right-5 {
+    width: 612px;
+    height: 86px;
+    margin-left: 188px;
+}
+
+
+div.col-right-5 input {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px 10px;
+}
+
+
+
+.box3-row6 {
+    width: 800px;
+    height: 48px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+
+.col-head-6 {
+    float: left;
+    background-color: #fff;
+    width: 178px;
+    height: 38px;
+    border-right: 1px solid #a6a6a6;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+div.col-right-6 {
+    width: 612px;
+    height: 49px;
+    margin-left: 188px;
+}
+
+
+div.col-right-6 input {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+.box3-row7 {
+    width: 800px;
+    height: 48px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.col-head-7 {
+    float: left;
+    background-color: #fff;
+    width: 178px;
+    height: 38px;
+    border-right: 1px solid #a6a6a6;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+
+div.col-right-7 {
+    width: 612px;
+    height: 49px;
+    margin-left: 188px;
+}
+
+div.col-right-7 select {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 3px 5px;
+}
+
+
+
+
+div.box3-row8 {
+    width: 800px;
+    height: 119px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+div.col-head-8 {
+    float: left;
+    background-color: #fff;
+    width: 178px;
+    height: 109px;
+    border-right: 1px solid #a6a6a6;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+div.col-right-8 {
+    width: 612px;
+    height: 120px;
+    margin-left: 188px;
+}
+
+div.col-right-8 input {
+    width: 330px;
+    height: 25px;
+    margin: 20px 0 0 20px;
+}
+div.col-right-8 button {
+    width: 76px;
+    height: 30px;
+}
+
+
+div.col-right-8 select {
+    padding: 5px 40px 5px 0;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+div.box3-row9 {
+    width: 800px;
+    height: 42px;
+}
+
+
+div.col-head-9 {
+    float: left;
+    background-color: #fff;
+    width: 178px;
+    height: 31px;
+    border-right: 1px solid #a6a6a6;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+div.col-right-9 {
+    width: 612px;
+    height: 31px;
+    margin-left: 188px;
+}
+
+div.col-right-9 select {
+    margin-left: 20px;
+    margin-top: 8px;
+    padding: 5px 5px;
+}
+
+
+
+/* ========================================
+    ボックス4 用
+========================================= */
+
+div.box4 {
+    width: 800px;
+    height: 192px;
+    border: 1px solid #a6a6a6;
+    border-left: 7px solid #0190d2;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+div.box4 h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 10px;
+}
+
+span.row-elerd {
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff5a44;
+    padding: 5px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+
+div.box4 .m-box2 {
+    width: 799px;
+    height: 156px;
+    background-color: #eeeeee;
+    border: 1px solid #a6a6a6;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 11px;
+}
+
+
+div.box4 .m-box2 ul li {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+
+
+/* ========================================
+    ボタン 用
+========================================= */
+
+div.button {
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+div.button input {
+    margin: 30px 350px;
+    padding: 10px 20px;
+}
+
+
+
+
+/* ========================================
+    フッダー用
+========================================= */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #1e2f46;
+    margin-top: 250px;
+}
+
+footer p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+}

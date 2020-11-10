@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N国際大学資料請求フォーム</title>
+    <link rel="stylesheet" href="form.css" media="screen">
+</head>
+<body>
+    <!-- ヘッダーここから -->
+    <header></header>
+    <!-- ヘッダーここまで -->
+
+    <!-- ラッパここから -->
+    <div id="wrapper">
+
+        <!-- フォームここから -->
+        <div id="form">
+            <h1>N国際大学資料請求フォーム</h1>
+
+            <div class="box1">
+                <p class="elerd">※このフォームでは海外からの資料請求は受け付けておりません</p>
+                <p class="elerd_text"><span>※個人情報の保護について</span><br>資料請求された方の個人情報（住所、氏名、学校名等）は、大学からの資料やお知らせの送<br>付のほか、広報のための統計的集計を行う為に利用する場合がございます、大学が明示した<br>用途意外での使用や、本学以外の第三者には提供致しません。</p>
+            </div>
+
+            <div class="m-box">
+                <p class="mbox1">入力</p>
+                <div class="mbox_icon"><img src="images/mbox-icon.png" alt=""></div>
+                <p class="mbox2">確認</p>
+                <p class="mbox3">完了</p>
+            </div>
+
+            <div class="box2">
+                <h2>希望資料<span class="row-elerd">必須</span></h2>
+                <div class="m-box2">
+                    <h3>（最大１個まで選択可）</h3>
+                    <ul>
+                        <li><input type="checkbox" name="" value="1">2021年度大学案内セット（受験生用）</li>
+                        <li><input type="checkbox" name="" value="2">2021年度大学案内セット（2年生用）</li>
+                        <li><input type="checkbox" name="" value="3">2021年度大学案内セット（1年生以下用）</li>
+                        <li><input type="checkbox" name="" value="4">2020年度大学資料</li>
+                        <li><input type="checkbox" name="" value="5">入学試験問題集セット（過去３ヶ年）【国語・英語】</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box3">
+                <form action="sample.php" method="post">
+                        <div class="box3-row1">
+                            
+                                <div class="col-head-1">
+                                    氏名（漢字）<span class="row-elerd">必須</span>
+                                </div>
+                                <div class="col-right-1">
+                                    
+                                        <input type="text" name="name" value="" placeholder="（例）山田　太郎">
+                                    
+                                </div>
+                            
+                        </div>
+
+                        <div class="box3-row2">
+                            
+                                <div class="col-head-2">
+                                    氏名（ふりがな）<span class="row-elerd">必須</span>
+                                </div>
+                                <div class="col-right-2">
+                                    
+                                        <input type="text" name="name" value="" placeholder="（例）やまだ　たろう">
+                                    
+                                </div>
+                            
+                        </div>
+
+                        <div class="box3-row3">
+                            
+                                <div class="col-head-3">
+                                    住所<span class="row-elerd">必須</span>
+                                </div>
+                                <div class="col-right-3">
+                                    
+                                        <p class="zip">郵便番号<input type="text" name="zipcode" value="" placeholder="（例）150031ハイフンなし"></p>
+
+                                        <p class="adm">都道府県</p>
+                                        <select name="adminis">
+                                            <option>東京都</option>
+                                            <option>千葉県</option>
+                                            <option>北海道</option>
+                                            <option>埼玉県</option>
+                                            <option>青森県</option>
+                                            <option>山形県</option>
+                                            <option>福島県</option>
+                                            <option>秋田県</option>
+                                            <option>岩手県</option>
+                                            <option>京都府</option>
+                                            <option>大阪府</option>
+                                            <option>山口県</option>
+                                            <option>海外　</option>
+                                        </select>
+
+                                        <p class="address1"><input type="text" name="address" value="" placeholder="〇〇市〇〇町＊市町村"></p>
+
+                                        <p class="address2"><input type="text" name="address" value="" placeholder="1-1-1"></p>
+
+                                        <p class="address3"><input type="text" name="address" value="" placeholder="〇〇ビル101※マンション名"></p>
+                                    
+                                </div>
+                            
+                        </div>
+
+                        <div class="box3-row4">
+                            
+                                <div class="col-head-4">
+                                    電話番号
+                                </div>
+                                <div class="col-right-4">
+                                    
+                                        <input type="number" name="number" value="" placeholder="0123234XXX">
+                                    
+                                </div>
+                            
+                        </div>
+
+                        <div class="box3-row5">
+                            
+                                <div class="col-head-5">
+                                    メールアドレス
+                                </div>
+                                <div class="col-right-5">
+                                    
+                                        <input type="email" name="email1" value="" placeholder="XXX@gmail.com"><br>
+                                        <input type="email" name="email2" value="" placeholder="確認の為再入力">
+                            
+                                    
+                                </div>
+                            
+                        </div>
+
+                        <div class="box3-row6">
+                            
+                                <div class="col-head-6">
+                                    性別
+                                </div>
+                                <div class="col-right-6">
+                                    
+                                        <input type="radio" name="gender" value="male">男性
+                                        <input type="radio" name="gender" value="female">女性
+                                    
+                                </div>
+                            
+                        </div>
+
+                        <div class="box3-row7">
+                            
+                                <div class="col-head-7">
+                                    在籍区分
+                                </div>
+                                <div class="col-right-7">
+                                    
+                                        <select name="classification">
+                                            <option>選択してください</option>
+                                            <option>高校生</option>
+                                            <option>大学生</option>
+                                            <option>短大生</option>
+                                            <option>大学院生</option>
+                                            <option>専門学校生</option>
+                                            <option>中学生</option>
+                                            <option>社会人</option>
+                                            <option>その他</option>
+                                        </select>
+                                    
+                                </div>
+                            
+                        </div>
+
+                        <div class="box3-row8">
+                            
+                                <div class="col-head-8">
+                                    在卒高校
+                                </div>
+                                <div class="col-right-8">
+                                    
+                                        <input type="text" name="" value="" placeholder="高校名の一部（カナ可）または高校コード">
+
+                                        <button>検索する</button><br>
+
+                                        <select>
+                                            <option value="在卒高校を検索してください">在卒高校を検索してください</option>
+                                        </select>
+                                    
+                                </div>
+                            
+                        </div>
+
+                        <div class="box3-row9">
+                            
+                                <div class="col-head-9">
+                                    在卒高校卒業年<span class="row-elerd">必須</span>
+                                </div>
+                                <div class="col-right-9">
+                                    
+                                        <select>
+                                            <option>選択してください</option>
+                                            <option>2020年以前（既卒生）</option>
+                                            <option>2021年卒業予定（高校3年生、高専5年生、中等教育学校6年生）</option>
+                                            <option>2022年卒業予定（高校3年生、高専5年生、中等教育学校6年生）</option>
+                                            <option>2023年卒業予定（高校3年生、高専5年生、中等教育学校6年生）</option>
+                                            <option>2024年卒業予定（高校3年生、高専5年生、中等教育学校6年生）</option>
+                                            <option>その以後</option>
+                                        </select>
+                                    
+                                </div>
+                            
+                        </div>
+                    </form>
+
+            </div>
+
+            <div class="box4">
+                <h2>希望資料<span class="row-elerd">必須</span></h2>
+                <div class="m-box2">
+                    <ul>
+                        <li><input type="checkbox" name="" value="1">日本語学部（外国人向け）</li>
+                        <li><input type="checkbox" name="" value="2">中国語学部</li>
+                        <li><input type="checkbox" name="" value="3">韓国語学部</li>
+                        <li><input type="checkbox" name="" value="4">フランス語学部</li>
+                        <li><input type="checkbox" name="" value="5">英語学部</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="button">
+                <input type="submit" name="submit1" value="送信">
+            </div>
+        </div>
+        <!-- フォームここまで -->
+
+    </div>
+    <!-- ラッパここまで -->
+
+    <!-- フッダーここから -->
+    <footer>
+        <p>Copyright © 2020 N University Inc. All Rights Reserved.</p>
+    </footer>
+    <!-- フッダーここまで -->
+
+</body>
+</html>
