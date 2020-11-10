@@ -457,7 +457,7 @@ span.job_icon {
 }
 
 .project img {
-    width: 100px;
+    width: 100%;
 }
 
 .project_description {
