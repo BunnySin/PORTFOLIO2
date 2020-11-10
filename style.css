@@ -512,8 +512,8 @@ span.job_icon {
     margin: 10px 0;
 }
 
-.contact_links img {
-    width: 50px;
+.contact_links i {
+    font-size: 50px;
     margin: 10px;
 }
 
